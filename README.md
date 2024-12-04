@@ -13,14 +13,18 @@ Neotest adapter for [Node.js test runner](https://nodejs.org/api/test.html). Run
 
 ## Setup
 
-### Lazy.nvim
+### LazyVim
 
 ```lua
 return {
   {
+    "nvim-neotest/neotest-plenary",
+  },
+  {
     "nvim-neotest/neotest",
+    dependencies = { "Nelfimov/neotest-node-test-runner" },
     opts = {
-      adapters = { require("Nelfimov/neotest-node-test-runner") },
+      adapters = { ["neotest-node-test-runner"] = {} },
     },
   },
 }

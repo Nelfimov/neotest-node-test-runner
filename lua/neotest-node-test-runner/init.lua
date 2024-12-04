@@ -1,4 +1,4 @@
-local Discoverer = require("neotest-node-test-runner.core.neotest-discoverer")
+local Discoverer = require("neotest-node-test-runner.core.discoverer")
 local Spec = require("neotest-node-test-runner.core.neotest-spec")
 local Result = require("neotest-node-test-runner.core.neotest-result")
 
