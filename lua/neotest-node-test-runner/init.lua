@@ -5,7 +5,7 @@ local Result = require("neotest-node-test-runner.core.neotest-result")
 ---@class neotest.Adapter
 local NodeTestAdapter = {}
 
-NodeTestAdapter.name = "neotest-node-runner"
+NodeTestAdapter.name = "neotest-node-test-runner"
 
 ---Find project root dir
 ---@param dir string
