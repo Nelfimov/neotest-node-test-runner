@@ -24,7 +24,7 @@ return {
     "nvim-neotest/neotest",
     dependencies = { "Nelfimov/neotest-node-test-runner" },
     opts = {
-      adapters = { ["neotest-node-test-runner"] = {} },
+      adapters = { "neotest-node-test-runner" },
     },
   },
 }
