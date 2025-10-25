@@ -3,7 +3,12 @@ local async = require("neotest.async")
 local Result = {}
 
 local function strip_ansi(s)
-	return (s:gsub("\27%[[0-9;]*m", ""))
+	s = s:gsub("\27%[[0-9;]*m", "")
+	s = s:gsub("%[[0-9;]*m", "")
+
+	s = s:gsub("\r", "")
+	s = s:gsub("\n\n+", "\n")
+	return vim.trim(s)
 end
 
 ---Process result file
